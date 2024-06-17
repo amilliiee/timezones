@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxt",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,11 +9,16 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^3.4.1",
+    "autoprefixer": "^10.4.19",
+    "nuxt": "^3.10.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "vue": "^3.4.20",
+    "vue-router": "^4.3.0"
+  },
   "dependencies": {
-    "@coreui/coreui": "^5.0.2",
-    "@coreui/vue": "^5.1.0",
-    "nuxt": "^3.12.1",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.3"
+    "vue-timezone-picker": "^0.0.2"
   }
 }

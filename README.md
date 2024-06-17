@@ -11,7 +11,6 @@ This product aims to simplify scheduling across different time zones by providin
 Make sure to install the dependencies:
 
 ```bash
-# yarn
 yarn install
 ```
 
@@ -20,7 +19,6 @@ yarn install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# yarn
 yarn dev
 ```
 
@@ -29,14 +27,12 @@ yarn dev
 Build the application for production:
 
 ```bash
-# yarn
 yarn build
 ```
 
 Locally preview production build:
 
 ```bash
-# yarn
 yarn preview
 ```
 

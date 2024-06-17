@@ -1,23 +1,18 @@
-# Nuxt 3 Minimal Starter
+# Simple Time Zone Converter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Project was built off of [Nuxt 3 Minimal Starter](https://github.com/nuxt/starter/tree/v3) and allows for simple time zone conversion.
+
+## Overview
+
+This product aims to simplify scheduling across different time zones by providing a straightforward tool for converting between local time and any selected time zone. Key features include automatic detection of the user's local time zone, the abiity to select and compare with any other time zone, and a simple, intuitive interface.
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
 # yarn
 yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -25,17 +20,8 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
 # yarn
 yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -43,33 +29,21 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
 # yarn
 yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
 # yarn
 yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Future Capabilities
+
+- Enhance UI/UX for better mobile responsiveness
+- Integrate with external APIs to handle daylight savings
+- Create a mobile app version for iOS and Android
+- Add support for advanced customization options for users
+- Add light/dark mode toggle for the site

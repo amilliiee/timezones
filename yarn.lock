@@ -330,6 +330,19 @@
   dependencies:
     mime "^3.0.0"
 
+"@coreui/coreui@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@coreui/coreui/-/coreui-5.0.2.tgz#d7f1e53497e2a53fa71888e7a5dfc416bff25c5b"
+  integrity sha512-ox3nnVxEvitgSMKbn5+DXMMLWgjoRKL0fnWXwA4B4eTLhnzyYBUZZAs+xHWIGRK0/PfP6cMiliYdC4Swhw/5xQ==
+
+"@coreui/vue@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@coreui/vue/-/vue-5.1.0.tgz#9f1cf5fc19f633b103bb6a6e87796f9a7110d8a6"
+  integrity sha512-woxI/YdRobU3aD2UV0inqKHWs/3wiLI+f887PQBfZHrhaxCTm2O1chR3NmTXplt52cTRwBOWiOIecf2ShZ/K/Q==
+  dependencies:
+    "@coreui/coreui" "^5.0.2"
+    "@popperjs/core" "^2.11.8"
+
 "@esbuild/aix-ppc64@0.20.2":
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.20.2.tgz#a70f4ac11c6a1dfc18b8bbb13284155d933b9537"
@@ -1158,6 +1171,11 @@
   version "1.0.0-next.25"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.25.tgz#f077fdc0b5d0078d30893396ff4827a13f99e817"
   integrity sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==
+
+"@popperjs/core@^2.11.8":
+  version "2.11.8"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
+  integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
 "@rollup/plugin-alias@^5.1.0":
   version "5.1.0"

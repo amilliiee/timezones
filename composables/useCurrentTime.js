@@ -1,27 +1,42 @@
-import { ref, onBeforeUnmount } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
+import moment from 'moment-timezone';
 
-export const useCurrentTime = () => {
+export const useCurrentTime = (initialTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone) => {
   const currentTime = ref({
     time: new Date(),
-    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    timezone: initialTimezone,
   });
 
   const updateCurrentTime = () => {
-    currentTime.value = {
-      time: new Date(),
-      timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
-    };
+    currentTime.value.time = new Data();
   };
 
+  // updates every minute
   const updateTimeInterval = onBeforeMount(() => {
-    setInterval(updateCurrentTime, 1000);
+    setInterval(updateCurrentTime, 60000);
   });
 
   onBeforeUnmount(() => {
     clearInterval(updateTimeInterval);
   });
+
+  // passes chosen time zone into second clock
+  const updateTimezone = (timezone) => {
+    currentTime.value.timezone = timezone;
+  }
+
+  // formats time
+  const formattedTime = computed(() => {
+    return new Intl.DateTimeFormat([], {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true
+    }).format(currentTime.value.time);
+  });
   
   return {
     currentTime,
+    updateTimezone,
+    formattedTime
   };
 };

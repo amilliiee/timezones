@@ -19,6 +19,8 @@
     "vue-router": "^4.3.0"
   },
   "dependencies": {
+    "@nuxt/kit": "^3.12.2",
+    "@nuxt/schema": "^3.12.2",
     "vue-timezone-picker": "^0.0.2"
   }
 }

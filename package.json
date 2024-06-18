@@ -21,6 +21,7 @@
   "dependencies": {
     "@nuxt/kit": "^3.12.2",
     "@nuxt/schema": "^3.12.2",
+    "moment-timezone": "^0.5.45",
     "vue-timezone-picker": "^0.0.2"
   }
 }

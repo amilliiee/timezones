@@ -1,10 +1,19 @@
-import { timezones } from 'vue-timezone-picker';
+import moment from 'moment-timezone';
+import { ref, onMounted } from 'vue';
 
-export default {
-    data() {
-        return {
-            selectedTimezone: null,
-            timezones: timezones.map(tz => ({ value: tz.name, text: tz.name }))
-        };
-    };
+export function useTimezonePicker() {
+  const timezones = ref([]);
+  
+  onMounted(() => {
+    timezones.value = moment.tz.names();
+  });
+
+  function updateTimezone(event) {
+    return event.target.value;
+  }
+
+  return {
+    timezones,
+    updateTimezone
+  };
 }
